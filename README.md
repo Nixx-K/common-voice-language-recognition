@@ -7,7 +7,7 @@ We chose 3 languages (Polish, Dutch, Portuguese) from 3 different language famil
 
 ### What to do to load the datasets?
 
-You'll need to register at Mozilla Data Collective and create your MDC_API_KEY (put it in .env file). 
+You'll need to register at Mozilla Data Collective and create your MDC_API_KEY (put it in .env file). Then, run src/dataset.py.
 
 
 
