@@ -3,7 +3,7 @@ This repository is for a university deep learning course final project - Common 
 
 ## Dataset: [Common Voice](https://mozilladatacollective.com/organization/cmfh0j9o10006ns07jq45h7xk)
 
-We chose 3 languages (Polish, Dutch, Portuguese) from 3 different language families to minimize issues from the very start. First problem arose with picking out similarly sized datasets, we're either blind or there's no way to filter through Common Voice bank.
+We chose 3 languages (Polish, Dutch, Portuguese) from 3 different language families (Slavic, Germanic, Romanic) to minimize issues from the very start. First problem arose with picking out similarly sized datasets, we're either blind or there's no way to filter through Common Voice bank.
 
 ### What to do to load the datasets?
 
