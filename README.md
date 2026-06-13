@@ -19,6 +19,6 @@ We chose 4 languages (Polish, German, Portuguese, Esperanto - if you consider it
 
 
 
-## Little treat at the very end
+## Little 🧁 treat at the very end
 
 We decided to test the model on some very odd (read: 'self-made') data!  Weronika Kłujszo - [@Nixx-K](https://github.com/Nixx-K) recorded samples for Polish, Portuguese and German (sorry, but idk Esperanto, though I did attend primary school on Esperanto St) of quality that left some doubts, since I'm only fluent in Polish, English and Spanish (but these datasets were just wayyy too big) and we checked the results.
