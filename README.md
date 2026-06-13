@@ -5,7 +5,9 @@ This repository is for a university deep learning course final project - Common 
 
 We chose 3 languages (Polish, Dutch, Portuguese) from 3 different language families to minimize issues from the very start. First problem arose with picking out similarly sized datasets, we're either blind or there's no way to filter through Common Voice bank.
 
+### What to do to load the datasets?
 
+You'll need to register at Mozilla Data Collective and create your MDC_API_KEY (put it in .env file). 
 
 
 
