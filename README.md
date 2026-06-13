@@ -5,12 +5,29 @@ This repository is for a university deep learning course final project - Common 
 
 We chose 3 languages (Polish, Dutch, Portuguese) from 3 different language families (Slavic, Germanic, Romanic) to minimize issues from the very start. First problem arose with picking out similarly sized datasets, we're either blind or there's no way to filter through Common Voice bank.
 
+
+
 ### What to do to load the datasets?
 
 You'll need to register at Mozilla Data Collective and create your MDC_API_KEY (put it in .env file). Then, run src/dataset.py.
 
 
-
+## Project structure
+```
+common-voice-language-recognition/
+├── .env.example
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── src/
+    ├── dataset.py
+    └── data/
+        ├── labels_processed.csv
+        ├── labels_augmented.csv
+        ├── raw/ <-- will only appear locally after running dataset.py
+        ├── processed/ <-- will only appear locally after running dataset.py
+        └── processed_augmented/ <-- will only appear locally after running dataset.py
+```
 
 
 
