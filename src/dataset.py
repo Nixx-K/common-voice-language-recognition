@@ -19,7 +19,7 @@ load_dotenv() # load outrAPI KEY from .env
 
 # Variables
 LANGUAGES = ['pl', 'nl', 'pt']
-SAMPLES =2000 # per language
+SAMPLES =1000 # per language
 RANDOM_SEED=27 # I like this number <3
 DATA_DIR = Path("data")
 RAW_DIR = DATA_DIR / "raw"
