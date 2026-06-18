@@ -11,13 +11,13 @@ import matplotlib.pyplot as plt
 
 # Configuration and Paths
 DATA_DIR = Path("data")
-PROCESSED_DIR = DATA_DIR / "processed_augmented"  # Switch to processed_augmented if testing noise
-LABELS_CSV = DATA_DIR / "labels_augmented.csv"  # Switch to labels_augmented.csv if testing noise
+PROCESSED_DIR = DATA_DIR / "processed"  
+LABELS_CSV = DATA_DIR / "labels_processed.csv" 
 
 IMG_WIDTH = 256
 IMG_HEIGHT = 64
 BATCH_SIZE = 32
-EPOCHS = 30  # EarlyStopping will stop it when needed
+EPOCHS = 30 
 
 # Map string labels to numeric integers
 LANG_MAP = {'pl': 0, 'nl': 1, 'pt': 2}
@@ -54,7 +54,7 @@ train_dataset = (
     .map(load_and_preprocess_image, num_parallel_calls=tf.data.AUTOTUNE)
     .shuffle(len(X_train_paths))
     .batch(BATCH_SIZE)
-    .prefetch(tf.data.AUTOTUNE)
+    .prefetch(tf.data.AUTOTUNE) 
 )
 
 test_dataset = (
@@ -111,7 +111,7 @@ callbacks = [
     # Stop training when val_loss stops improving for 5 epochs
     EarlyStopping(
         monitor='val_loss',
-        patience=5,
+        patience=10,
         restore_best_weights=True,  # Revert to best epoch automatically
         verbose=1
     ),
@@ -163,7 +163,7 @@ plt.close()
 print(f"Training plot saved to: models/training_history.png")
 
 # Final evaluation
-print("\n--- Final Evaluation on Test Set ---")
+print("\nFinal Evaluation on Test Set")
 test_loss, test_acc = model.evaluate(test_dataset, verbose=0)
 print(f"Test accuracy: {test_acc:.4f} ({test_acc*100:.1f}%)")
 print(f"Test loss:     {test_loss:.4f}")
