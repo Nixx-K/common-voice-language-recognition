@@ -46,3 +46,5 @@ common-voice-language-recognition/
 ## Little 🧁 treat at the very end
 
 We decided to test the model on some very odd (read: 'self-made') data!  Weronika Kłujszo - [@Nixx-K](https://github.com/Nixx-K) recorded samples for Polish and Portuguese of quality that definitely left some doubts, since she's only fluent in Polish, English and Spanish (but these datasets were just wayyy too big) and we checked the results.
+
+Each language got 10 3-second samples with noise (some more, some less) - not artifically augmented, just recorded in everyday environment instead of studio. Portuguese got 100% accuracy, while Polish got... 0%. It got classified as Portuguese 60% of the time, while as Dutch - 40% of the time. We suspected it would mostly be classified as Portuguese, so the results were quite surprising. Most of the tie, though, the model was very sure it would be Portuguese (0.9 on average), but only semi-sure it would be Dutch (0.59 on average).
