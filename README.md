@@ -19,6 +19,9 @@ common-voice-language-recognition/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
+├── models/
+    ├── best_model.keras
+    └── language_recognition_model.keras
 └── src/
     ├── train.py
     ├── train_on_own.py
