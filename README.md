@@ -24,7 +24,7 @@ common-voice-language-recognition/
     └── language_recognition_model.keras
 └── src/
     ├── train.py
-    ├── train_on_own.py
+    ├── train_on_own.py <-- .py file to process and test (not train, typo) best_model.keras on self-made data
     ├── dataset.py
     └── data/
         ├── labels_processed.csv
