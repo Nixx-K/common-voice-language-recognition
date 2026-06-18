@@ -31,9 +31,7 @@ common-voice-language-recognition/
         ├── labels_augmented.csv
         ├── raw/ <-- will only appear locally after running dataset.py
         ├── processed/ <-- will only appear locally after running dataset.py
-        ├── processed_augmented/ <-- will only appear locally after running dataset.py
-        ├── own/
-        └── own_melspecs/
+        └── processed_augmented/ <-- will only appear locally after running dataset.py
 ```
 
 
